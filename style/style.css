@@ -16,11 +16,8 @@ a{
 div{
     background-color: rgb(0,0,0);
 }
-#div_esq{
-    min-height: 200px;
-}
-#div_dir{
-    min-height: 200px;
+#teste{
+    display:flex;
 }
 footer{
     height: 30px;
