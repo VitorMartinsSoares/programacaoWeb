@@ -8,12 +8,13 @@
     </head>
     <body>
       <header>
-        <div id="menu">
-          <a href="#home"><button type="button" class="btn btn-outline-light"> Home </button></a>
-          <a href="#produtos"><button type="button" class="btn btn-outline-light"> Produtos </button></a>
-          <a href="#modouso"><button type="button" class="btn btn-outline-light">Modo de Uso </button></a>
-          <a href="#sobre"><button type="button" class="btn btn-outline-light">Sobre </button></a>
-          <a href="#contato"><button type="button" class="btn btn-outline-light">Contato </button></a>
+        <div  id="menu">
+            <a href="#home"><button type="button" class="btn btn-outline-light"> Home </button></a>
+            <a href="#produtos"><button type="button" class="btn btn-outline-light"> Produtos </button></a>
+            <a href="#modouso"><button type="button" class="btn btn-outline-light">Modo de Uso </button></a>
+            <a href="#sobre"><button type="button" class="btn btn-outline-light">Sobre </button></a>
+            <a href="#contato"><button type="button" class="btn btn-outline-light">Contato </button></a>
+            <a href="#carrinhos"><button type="button" class="btn btn-outline-light" id="carrinho">Carrinho:  </button></a>
         </div>
       </header>
         <div id="primaria">
@@ -90,6 +91,7 @@
                     Os elogios foram direcionados à jogabilidade aprimorada em relação ao seu antecessor, fidelidade visual e performances do elenco, enquanto seu enredo e as apresentações de seus temas através da violência receberam opiniões divididas da crítica e do público. 
                     The Last of Us Part II é um dos jogos mais vendidos do PlayStation 4 e o exclusivo desta plataforma mais rapidamente vendido, com mais de 4 milhões de unidades comercializadas em seus primeiros três dias de lançamento.
                   </p>
+                  <button type="button" onclick="buyTLOU2()">Comprar (R$130)</button>
                 </div>
               </div>
               <div id="gow4">
@@ -113,6 +115,7 @@
                   Foi bem-sucedido comercialmente, vendendo mais de 12 milhões de unidades até junho de 2019 e tornando-se um dos jogos mais vendidos de PlayStation 4 de todos os tempos. 
                   Considerado como um dos títulos mais importantes da oitava geração de consoles, God of War recebeu diversos prêmios, incluindo muitos de Jogo do Ano. 
                   Uma romantização do jogo foi lançada em agosto de 2018, seguida por uma série prequela de quadrinhos de quatro edições que foi publicada entre novembro de 2018 e fevereiro de 2019.</p>
+                  <button type="button" onclick="buyGOW()">Comprar (R$120)</button>
               </div>
               <div id="rdr2">
                 <h2>Red Dead Redemption 2</h2>
@@ -132,6 +135,7 @@
                   Ele arrecadou mais de 725 milhões de dólares em seu fim de semana de estreia e superou as vendas totais do primeiro Red Dead Redemption em apenas duas semanas, já tendo vendido mundialmente mais de 31 milhões de cópias. 
                   Ele foi aclamado pela crítica especializada, com elogios direcionados para sua história, personagens, mundo aberto e nível de detalhes. 
                   Também venceu diversos prêmios de final de ano, incluindo alguns de Jogo do Ano.</p>
+                  <button type="button" onclick="buyRDR2()">Comprar (R$200)</button>
               </div>
               <div id="ds">
                 <h2>Death Stranding</h2>
@@ -146,6 +150,7 @@
                   Um dos principais aspectos do jogo é a conexão entre vida e morte, com Kojima inspirando-se em um conto do escritor Kōbō Abe para o desenvolvimento dos temas e jogabilidade do título.
                   Death Stranding recebeu críticas geralmente favoráveis ​​através da crítica especializada, que o viram como uma experiência única e elogiaram sua dublagem, trilha sonora, história e gráficos, embora muitos tenham sido polarizados por sua jogabilidade e ritmo. 
                   Ele recebeu dez indicações no The Game Awards 2019, vencendo em três: "Melhor Direção de Jogo", "Melhor Trilha Sonora" e "Melhor Performance" para Mads Mikkelsen.</p>
+                  <button type="button" onclick="buyDS()">Comprar (R$80)</button>
               </div>
             </div>
           <div id="modouso">
@@ -172,6 +177,15 @@
                 Em setembro de 2016, a Sony revelou dois novos sistemas, revisões do hardware da PlayStation 4:
                 a versão “slim”, que corresponde a um design menor do sistema original; e a versão "Pro", com uma GPU melhorada e a CPU com frequência de relógio aumentada para suportar jogos na resolução 4K.</p>
           </div>
+          <div id="carrinhos">
+            <h1>Carrinho</h1>
+            <div>
+                <p id=carrinhoarea>
+                  
+                </p>
+                <button type="button" onclick="apagar()">Deletar Carrinho</button>
+            </div>
+          </div>
           <div id="contato">
             <h1>Contato</h1>
             <div>
@@ -184,5 +198,7 @@
             </div>
           </div>
         </div>
+        <script src="js/main.js">
+        </script>
     </body>
 </html>
